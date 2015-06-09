@@ -1,0 +1,19 @@
+{
+  "name": "reenact",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "gulp tests:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobinThrift/reenact"
+  },
+  "author": "Robin Thrift <thrift.d.robin@googlemail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobinThrift/reenact/issues"
+  },
+  "homepage": "https://github.com/RobinThrift/reenact"
+}
