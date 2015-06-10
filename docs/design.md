@@ -110,3 +110,60 @@ Find the best contrasting colour for text againts the background image:
 </Slide>
 // ...
 ```
+
+Code Examples that will displayed inline and be interactive:
+```jsx
+// ...
+<Slide>
+    <Example>
+        <Code language={javascript} name="hello.directive.js">
+            angular.module('hello')
+                .directive('hello', function() {
+                    return {
+                        // ...
+                        template: 'tmpl.tpl.html'
+                    }
+                });
+        </Code>
+        <Code language={html} name="tmpl.tpl.html">
+            <h2>{{:name}}</h2>
+        </Code>
+        <Scene />
+    </Example>
+</Slide>
+// ...
+```
+How will these be scoped? IFrames, inline?
+
+
+Code Examples that are live executed? This could talk to a server in the background?
+```jsx
+// ...
+<Slide>
+    <Example>
+        <Code language={ruby} name="hello.rb" cmd="ruby -e $">
+            puts 'Hello World'
+        </Code>
+        <Result default="Hello World" timeout={500} />
+    </Example>
+</Slide>
+// ...
+```
+The `<Result />`-Component could define a default that would be triggered by step, when
+using a static output or the interpreter/compiler/etc. takes to long to respond (`timeout`
+property in ms).
+
+
+Embedding a REPL? This would talk to a server in the background which pipes the input into a REPL
+and Returns the result.
+```jsx
+// ...
+<Slide>
+    <REPL cmd="node" timeout={1000}>
+        <REPL.Input returns="undefined">var i = 10</REPL.Input>
+        <REPL.Input returns="10">i</REPL.Input>
+    </REPL>
+</Slide>
+// ...
+```
+The `returns` property could be used as a step in static renders or after a timeout.
