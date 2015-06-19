@@ -1,9 +1,9 @@
-# Reenact Design Doc
+# Silbertablett Design Doc
 
 ## Basic Syntax for Presentations
 
 ```jsx
-<Reenact author="First Last" twitter="@FirstLast" homepage="firstlast.com">
+<AG author="First Last" twitter="@FirstLast" homepage="firstlast.com">
     <Slide>
         <h1>My Title Slide</h1>
         <AuthorBox />
@@ -27,7 +27,7 @@
             - Third Item
         </StepList> 
     </Slide>
-</Reenact>
+</AG>
 ```
 
 - Where should this file be located?
