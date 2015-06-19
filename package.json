@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/RobinThrift/reenact/issues"
   },
-  "homepage": "https://github.com/RobinThrift/reenact"
+  "homepage": "https://github.com/RobinThrift/reenact",
+  "devDependencies": {
+    "babel-core": "^5.5.8",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-mocha": "^2.1.1",
+    "mocha": "^2.2.5",
+    "parsec": "0.0.8",
+    "should": "^7.0.1"
+  }
 }
